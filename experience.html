@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Projects - Sikandar</title>
+</head>
+<body>
+    <header class="header">
+        <a href="initial-letter-sp-logotype-company-260nw-1143851846.webp" class="logo">Sagar Parhad</a>
+    
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Home</a>
+            <a href="about.html" style="--i:2">About</a>
+            <a href="skills.html" style="--i:3">Skills</a>
+            <a href="project.html" style="--i:4">Project</a>
+            <a href="experience.html" style="--i:5">Experience</a>
+            <a href="certification.html" style="--i:5">Certification</a>
+            <a href="photos.html" style="--i:6">Photos</a>
+            <a href="contact.html" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h2>Work Experience</h2>
+
+        <div class="project-card">
+            <h3><b>Money4Drive Company | Indore</b></h3>
+            <p>I completed a 3-month internship at Money4Drive as an Assistant Web Developer, where I gained hands-on experience in web development. During this internship, I worked on frontend and backend development, enhancing my skills in UI/UX design, database management, and API integration. I collaborated with the development team to improve website functionality, optimize performance, and ensure a seamless user experience. This experience strengthened my problem-solving abilities, deepened my understanding of web technologies, and provided valuable exposure to real-world project development.</p>
+            <a href="https://www.linkedin.com/posts/sagar-parhad-42330826a_money4drive-internship-certificate-activity-7181534388596162561-kS6l?utm_source=share&utm_medium=member_desktop" target="_blank" class="marksheet-link">Internship Letter</a>
+        </div>
+
+        <div class="project-card">
+            <h3><b>Oasis Infobyte</b></h3>
+            <p>I completed a one-month online internship at Oasis Infobyte as a Web Developer, where I built mini projects like a calculator, temperature converter, watches landing page, and a personal portfolio website. This internship helped me improve my HTML, CSS, JavaScript, and UI/UX design skills, giving me hands-on experience in creating responsive and user-friendly web applications.</p>
+            <a href="https://www.linkedin.com/posts/sagar-parhad-42330826a_oasis-internship-certificate-activity-7157995167654764544-vsLm?utm_source=share&utm_medium=member_desktop" target="_blank" class="marksheet-link">Internship Letter</a>
+        </div>
+        
+        <div class="project-card">
+            <h3><b>Vritti Solutions Limited | Pune</b></h3>
+            <p>I completed a 9-month full-time, in-office internship at Vritti Solutions Ltd., Pune, working on web and Android app development. I contributed to live web projects like AdatSoft and PetroSoft and developed Android apps such as AnyDukaan Merchant App, Ekatm ERP App, AdatSoft Mobile App, Simplify, and EkatmKonnect. This experience enhanced my technical skills in Flutter and web development, improved my problem-solving abilities, and provided valuable real-world project exposure.</p>
+            <a href="https://www.linkedin.com/posts/sagar-parhad-42330826a_internship-certificate-activity-7248925942343995392-5yi8?utm_source=share&utm_medium=member_desktop" target="_blank" class="marksheet-link">Internship Letter</a>
+        </div>
+
+    </section>
+
+    <section class="projects">
+        <h2>Add Work Experience</h2>
+
+        <!-- Display Added Projects Here -->
+        <div id="project-list"></div>
+
+        <!-- Add New Project Form -->
+        <div class="add-project">
+            <input type="text" id="projectName" placeholder="industry Name">
+            <textarea id="projectDesc" placeholder="Work Experience Description"></textarea>
+            <input type="url" id="projectLink" placeholder="Experience Letter Link">
+            <button onclick="addProject()">Add Work Experience</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

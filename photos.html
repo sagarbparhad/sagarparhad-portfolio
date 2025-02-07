@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>SIKANDAR</title>
+    <style>
+        .upload-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="initial-letter-sp-logotype-company-260nw-1143851846.webp" class="logo">Sagar Parhad</a>
+    
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Home</a>
+            <a href="about.html" style="--i:2">About</a>
+            <a href="skills.html" style="--i:3">Skills</a>
+            <a href="project.html" style="--i:4">Project</a>
+            <a href="experience.html" style="--i:5">Experience</a>
+            <a href="certification.html" style="--i:5">Certification</a>
+            <a href="photos.html" style="--i:6">Photos</a>
+            <a href="contact.html" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="image" id="imageContainer">
+            <img src="20241228_162701.jpg" alt="sp9" height="850px" width="400px">
+            <img src="sp.jpg" alt="sp" height="850px" width="400px">
+            <img src="sp2.jpg" alt="sp2" height="850px" width="400px">
+            <img src="sp3.jpg" alt="sp3" height="850px" width="400px"> 
+            <img src="20241228_162705.jpg" alt="sp9" height="850px" width="400px">       
+            <img src="sp5.jpg" alt="sp5" height="850px" width="400px">
+            <img src="20241229_131126.jpg" alt="sp5" height="850px" width="400px">
+            <img src="sp6.jpg" alt="sp6" height="850px" width="400px">
+            <img src="20241228_162716.jpg" alt="sp9" height="850px" width="400px">
+            <img src="sp7.jpg" alt="sp7" height="850px" width="400px">
+            <img src="sp8.jpg" alt="sp8" height="850px" width="400px">
+            <img src="20241228_163343.jpg" alt="sp9" height="850px" width="400px">
+            <img src="sp9.jpg" alt="sp9" height="850px" width="400px">
+            <img src="20241228_163345.jpg" alt="sp9" height="850px" width="400px">
+            <img src="20241229_131445.jpg" alt="sp9" height="850px" width="400px">
+            <img src="20241229_131446.jpg" alt="sp9" height="850px" width="400px">
+        </div>
+    </section>
+
+    <div class="upload-container">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="addImage()" class="btn-box">Add Image</button>
+    </div>
+
+    <script>
+        function addImage() {
+            const input = document.getElementById("imageUpload");
+            const imageContainer = document.getElementById("imageContainer");
+
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.createElement("img");
+                    img.src = e.target.result;
+                    img.height = 650;
+                    img.width = 400;
+                    imageContainer.appendChild(img);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

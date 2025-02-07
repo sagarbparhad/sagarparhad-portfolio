@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>SIKANDAR</title>
+</head>
+<body>
+    <header class="header">
+        <a href="initial-letter-sp-logotype-company-260nw-1143851846.webp" class="logo">Sagar Parhad</a>
+    
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Home</a>
+            <a href="about.html" style="--i:2">About</a>
+            <a href="skills.html" style="--i:3">Skills</a>
+            <a href="project.html" style="--i:4">Project</a>
+            <a href="experience.html" style="--i:5">Experience</a>
+            <a href="certification.html" style="--i:5">Certification</a>
+            <a href="photos.html" style="--i:6">Photos</a>
+            <a href="contact.html" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+            <p>Thank you for considering collaboration! I'm excited about the possibility of working together on your next project. Whether you have a specific idea in mind or want to explore potential opportunities, feel free to reach out. I'm here to bring your vision to life.</p>
+            <div class="contact-list">
+                <li><i class='bx bxs-send'></i>sagarparhad9935@gmail.com</li>
+                <li><i class='bx bxs-phone'></i>8767225263 / 7738421644</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/sagar-parhad-42330826a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/s_sikandar_?igsh=MWdnaWJudzdoc3pqZw=="><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.facebook.com/sagar.parhad.33?mibextid=ZbWKwL"><i class='bx bxl-facebook-circle' ></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form onsubmit="sendToWhatsApp(event)">
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <input type="text" id="subject" placeholder="Enter Your Subject">
+                <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section>
+
+
+<script>
+    function sendToWhatsApp(event) {
+        event.preventDefault(); // Prevent form submission
+    
+        // Get user input
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+    
+        // Construct WhatsApp message URL
+        let whatsappMessage = `https://wa.me/918767225263?text=${encodeURIComponent(
+            "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message
+        )}`;
+    
+        // Open WhatsApp chat
+        window.open(whatsappMessage, "_blank");
+    }
+    </script>
+    
+    <script src="main.js"></script>
+</body>
+</html>

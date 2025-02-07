@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Projects - Sikandar</title>
+</head>
+<body>
+    <header class="header">
+        <a href="initial-letter-sp-logotype-company-260nw-1143851846.webp" class="logo">Sagar Parhad</a>
+    
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Home</a>
+            <a href="about.html" style="--i:2">About</a>
+            <a href="skills.html" style="--i:3">Skills</a>
+            <a href="project.html" style="--i:4">Project</a>
+            <a href="experience.html" style="--i:5">Experience</a>
+            <a href="certification.html" style="--i:5">Certification</a>
+            <a href="photos.html" style="--i:6">Photos</a>
+            <a href="contact.html" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        
+        <div class="project-card">
+            <h3><b>1. Web Calculator</b></h3>
+            <p>I developed a fully functional Mathematical Calculator using HTML, CSS, and JavaScript. This calculator performs basic arithmetic operations such as addition, subtraction, multiplication, and division, along with advanced functionalities like percentage calculation and clear/reset options.</p>
+            <a href="https://sagarbparhad.github.io/cal.sp/" target="_blank" class="marksheet-link">GitHub Repository</a>
+        </div>
+
+        <div class="project-card">
+            <h3><b>2. Temperature Convertor Web</b></h3>
+            <p>A simple and interactive Temperature Converter built using HTML, CSS, and JavaScript. It allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin with real-time results and a user-friendly interface.</p>
+            <a href="https://github.com/sagarbparhad/Temperature_con.git" target="_blank" class="marksheet-link">GitHub Repository</a>
+        </div>
+
+        <div class="project-card">
+            <h3><b>3. Invitation card</b></h3>
+            <p>I designed and developed an interactive Invitation Card Web Application using HTML, CSS, and JavaScript. This project allows users to create beautifully designed digital invitations for events like weddings, birthdays, anniversaries, and more.</p>
+            <a href="https://sagarbparhad.github.io/shivamkale/" target="_blank" class="marksheet-link">GitHub Repository</a>
+        </div>
+
+        <div class="project-card">
+            <h3><b>4. Landing Page Web</b></h3>
+            <p>I developed a modern and responsive watches landing page using HTML, CSS, and JavaScript. It features a sleek design with smooth animations, hover effects, a carousel slider, and interactive buttons for an engaging user experience. The page is fully optimized for all devices and includes call-to-action (CTA) sections to enhance user interaction. This project showcases my skills in front-end development, UI/UX design, and JavaScript interactivity.</p>
+            <a href="https://github.com/sagarbparhad/Landing-Page.git" target="_blank" class="marksheet-link">GitHub Repository</a>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Add New Projects</h2>
+
+        <!-- Display Added Projects Here -->
+        <div id="project-list"></div>
+
+        <!-- Add New Project Form -->
+        <div class="add-project">
+            <input type="text" id="projectName" placeholder="Project Name">
+            <textarea id="projectDesc" placeholder="Project Description"></textarea>
+            <input type="url" id="projectLink" placeholder="GitHub Link">
+            <button onclick="addProject()">Add Project</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
